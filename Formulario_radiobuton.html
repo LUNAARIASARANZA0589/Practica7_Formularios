@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios con RadioBoton</title>
+
+<!--Luna Arias Meredith Aranza — 0589 — 5-I -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+<style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h2>Formularios con Radiobotón</h2>
+    <form action="" method="post">
+    <!--Aquí se indica que vamos a tener un formulario, no tiene ninguna acción debido a que no está ligada a ninguna base de datos, con el método post que significa enviar-->     
+
+    Ingresa tu nombre:
+    <input type="text" name="nombre">
+    <!--Aquí tenemos un input de variable de texto, donde se va a almacenar el nombre de quién responde el formulario.-->
+
+    <br>
+    Selecciona el maximo de estudios que tienes:
+    <br>
+    <input type="radio" name="estudios" value="1">Sin estudios <br>
+    <input type="radio" name="estudios" value="2">Primaria <br> 
+    <input type="radio" name="estudios" value="3">Secundaria <br>
+    <input type="radio" name="estudios" value="4">Preparatoria <br>
+    <!--Aquí tenemos un input de opción múltiple utilizando radiobuton, que nos permite tener una opción elegible circular, cada uno corresponde al mismo tipo pero el nombre cambia para cada opción.-->
+
+    <input type="submit" value="enviar">
+    <input type="reset" value="borrar">
+    <!--Aquí tenemos los botones para realizar las acciones de enviar (submit) y eliminar (reset).-->
+    </form>
+
+</body>
+</html>

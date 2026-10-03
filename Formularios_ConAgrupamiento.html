@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios con Agrupamiento</title>
+
+<!--Luna Arias Meredith Aranza — 0589 — 5-I -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+<style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h2 align="center"> Formulario con Agrupamiento </h2>
+  <form action="" method="post">
+  <!--Aquí se indica que vamos a tener un formulario, no tiene ninguna acción debido a que no está ligada a ninguna base de datos, con el método post que significa enviar-->
+    
+  <fieldset>
+  <legend>Datos personales</legend>
+  Nombre y apellido:
+  <input type="text" name="nombre_apellido"><br>
+  <!--Aquí tenemos un input de variable de texto, donde se va a almacenar el nombre de quién responde el formulario.-->  
+  Documento valido:
+  <input type="file" name="documento"><br>
+  <!--Aquí tenemos un input de files(documentos), donde se va a almacenar el documento personal de quién responde el formulario.-->
+  Fecha de nacimiento:
+  <input type="date" name="fecha_nacimiento">
+  </fieldset>
+  <!--Aquí tenemos un input de fechas, donde se va a almacenar la fecha exacta mediante un calendario generado por el HTML.-->
+  <fieldset>
+  <!--Aquí tenemos un fieldset que se utiliza para agrupar controles relacionados y sus etiquetas dentro de un formulario web.--> 
+    
+  <legend>Datos de estudio:</legend>
+  Nombre de la escuela:
+  <input type="text" name="escuela"><br>
+  Certificado valido:
+  <input type="file" name="certificado"><br>
+  Fecha de egreso:
+  <input type="date" name="fecha_egreso">
+  </fieldset>
+    
+  <br>
+  <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+  <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+  <!--Aquí tenemos los botones para realizar las acciones de enviar (submit) y eliminar (reset).-->
+  </form>
+ 
+</body>
+</html>
